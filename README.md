@@ -7,11 +7,11 @@ IAM authentication is enabled allowing consuming applications to authenticate wi
 
 The module is can be used to create any AWS aurora serverless supported engine, at the time of writting, this is MySQL and Postgresql.
 
-For a list of assumptions and dependencies please see ...
+For a list of assumptions and dependencies please see https://github.com/apj0nes/rails-example#assumptions
 
 ## Usage
 
-An example repository can be seen here ...
+An example repository consuming the module can be seen here https://github.com/apj0nes/rails-example
 
 ## Inputs
 
@@ -22,7 +22,7 @@ An example repository can be seen here ...
 | terraformer_bucket | S3 bucket holding the remote state | string | - | yes |
 | vpc_remote_state_key | Key used to lookup the remote state within the S3 bucket | string | - | yes |
 | min_capacity | The minimum the cluster will scale to | string | `2` | no |
-| engine | The database engine | string | `aurora-mysql` | yes |
+| engine | The database engine | string | `aurora-mysql` | no |
 | port | The database port | string | `3306` | no |
 | vault_address | The address of the Vault instance | string | `https://vault.example.net:8200` | no |
 | aws_region | The AWS region to deploy to | string | `eu-west-1` | no |
